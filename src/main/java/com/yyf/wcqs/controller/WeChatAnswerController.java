@@ -61,6 +61,8 @@ public class WeChatAnswerController {
                     text.setContent(weather.toString());
                 }else if (content.equals("卞蒙丹")){
                     text.setContent("你家峰峰哥哥很喜欢你");
+                }else if (content.equals("小秘密")){
+                    text.setContent("http://39.105.67.98/html/index.html");
                 }else{
                     text.setContent("hello");
                 }
