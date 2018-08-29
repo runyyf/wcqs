@@ -16,7 +16,7 @@
         .then(() => engine.shake())
         .then(() => engine.toText('YOU'))
         .then(() => engine.shake())
-        .then(() => engine.toText('daisy'))
+        .then(() => engine.toText('DAISY'))
         .then(() => engine.shake())
         .then(() => engine.clear())
         .then(() => document.getElementById('go').addEventListener('click', start));
