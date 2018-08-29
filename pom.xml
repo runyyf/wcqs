@@ -135,6 +135,15 @@
 			<systemPath>${project.basedir}/lib/msc.jar</systemPath>
 			<scope>system</scope>
 		</dependency>
+		<!--科大讯飞语音库依赖库-->
+		<dependency>
+			<groupId>com.jena</groupId>
+			<artifactId>kdxf-slave-jena-sdk</artifactId>
+			<version>1.0</version>
+			<systemPath>${project.basedir}/lib/json-jena-1.0.jar</systemPath>
+			<scope>system</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>

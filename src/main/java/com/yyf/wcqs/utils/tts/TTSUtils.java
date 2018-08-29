@@ -13,40 +13,20 @@ public class TTSUtils {
         SpeechUtility.createUtility(SpeechConstant.APPID+"=5b8654b6");
     }
 
-    private SpeechSynthesizer mySynListener = new SpeechSynthesizer() {
+    private  SynthesizeToUriListener mySynListener = new SynthesizeToUriListener() {
         @Override
-        public void startSpeaking(String s, SynthesizerListener synthesizerListener) {
+        public void onBufferProgress(int i) {
 
         }
 
         @Override
-        public void synthesizeToUri(String s, String s1, SynthesizeToUriListener synthesizeToUriListener) {
+        public void onSynthesizeCompleted(String s, SpeechError speechError) {
 
         }
 
         @Override
-        public void pauseSpeaking() {
+        public void onEvent(int i, int i1, int i2, int i3, Object o, Object o1) {
 
-        }
-
-        @Override
-        public void resumeSpeaking() {
-
-        }
-
-        @Override
-        public void stopSpeaking() {
-
-        }
-
-        @Override
-        public boolean isSpeaking() {
-            return false;
-        }
-
-        @Override
-        public boolean destroy() {
-            return false;
         }
     };
 
@@ -61,8 +41,18 @@ public class TTSUtils {
         mTts.setParameter(SpeechConstant.SPEED,"50");
         mTts.setParameter(SpeechConstant.VOLUME,"80");
         mTts.setParameter(SpeechConstant.TTS_AUDIO_PATH,"./tts_test.pcm");
-//        mTts.startSpeaking("语音合成测试",mySynListener);
+        mTts.synthesizeToUri("语音合成测试","./tts_test.pcm",mySynListener);
     }
 
+    public void pcmToWav(){
 
+    }
+
+    public void wavToMp3(){
+
+    }
+
+    public static void main(String args[]){
+        new TTSUtils().createPcm();
+    }
 }

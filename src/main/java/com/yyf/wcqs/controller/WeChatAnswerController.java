@@ -1,5 +1,6 @@
 package com.yyf.wcqs.controller;
 
+import com.yyf.wcqs.cache.WeChatCache;
 import com.yyf.wcqs.domain.Weather;
 import com.yyf.wcqs.repository.WeatherRepository;
 import com.yyf.wcqs.utils.EmptyUtils;
@@ -17,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 
@@ -62,12 +64,43 @@ public class WeChatAnswerController {
                 }else if (content.equals("卞蒙丹")){
                     text.setContent("你家峰峰哥哥很喜欢你");
                 }else if (content.equals("小秘密")){
-                    text.setContent("http://39.105.67.98/html/index.html");
+                    text.setContent("http://runyyf.top/html/index.html");
                 }else{
                     text.setContent("hello");
                 }
                 text.setCreateTime(new Date().getTime());
                 message=MessageUtils.textMessageToXml(text);
+            }else if ("voice".equals(msgType)){
+                WeChatMessageNotify text =new WeChatMessageNotify();
+                text.setFromUserName(toUserName);
+                text.setToUserName(fromUserName);
+
+
+                String mediaId = map.get("MediaId");
+                String recognition = map.get("Recognition");
+                if (recognition.length() >10){
+                    recognition = recognition.substring(0,9);
+                }
+
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmSS");
+
+
+                //通过语音id下载语音
+                String videoUrl = WeChatCache.getInstance().getMediaResourceUrl(mediaId,sdf.format(new Date()));
+                if (videoUrl==null){
+                    text.setMsgType("text");
+                    text.setContent("转化失败");
+                }else {
+                    text.setMsgType("image");
+                }
+
+                text.setCreateTime(new Date().getTime());
+                //message=MessageUtils.textMessageToXml(text);
+
+                System.out.println(mediaId);
+                System.out.println(recognition);
+                System.out.println(videoUrl);
+
             }
             //	System.out.println(message);
             out.print(message);

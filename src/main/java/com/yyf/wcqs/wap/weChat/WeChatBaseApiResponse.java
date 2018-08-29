@@ -17,6 +17,7 @@ public class WeChatBaseApiResponse {
     private String scope;//用户授权的作用域
 
     private List<String> ip_list;//ip列表
+    private String video_url;//url下载地址
 
     public Integer getErrcode() {
         return errcode;
@@ -88,5 +89,13 @@ public class WeChatBaseApiResponse {
 
     public void setIp_list(List<String> ip_list) {
         this.ip_list = ip_list;
+    }
+
+    public String getVideo_url() {
+        return video_url;
+    }
+
+    public void setVideo_url(String video_url) {
+        this.video_url = video_url;
     }
 }

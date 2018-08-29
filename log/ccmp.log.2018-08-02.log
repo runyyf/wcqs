@@ -76,3 +76,425 @@
 2018-08-02 01:00:01.099 [pool-1-thread-1] ERROR com.yyf.wcqs.cache.WeChatCache - 获取ipList时缺少accessToken参数
 2018-08-02 01:00:01.099 [pool-1-thread-1] INFO  com.yyf.wcqs.task.WeatherUpdateTask - 开始更新天气信息
 2018-08-02 01:00:01.269 [pool-1-thread-1] INFO  com.yyf.wcqs.task.WeatherUpdateTask - {"date":"20180802","message":"Success !","status":200,"city":"杭州","count":3,"data":{"shidu":"73%","pm25":27.0,"pm10":46.0,"quality":"良","wendu":"30","ganmao":"极少数敏感人群应减少户外活动","yesterday":{"date":"01日星期三","sunrise":"05:17","high":"高温 34.0℃","low":"低温 26.0℃","sunset":"18:54","aqi":59.0,"fx":"东北风","fl":"<3级","type":"阵雨","notice":"阵雨来袭，出门记得带伞"},"forecast":[{"date":"02日星期四","sunrise":"05:17","high":"高温 33.0℃","low":"低温 25.0℃","sunset":"18:53","aqi":59.0,"fx":"无持续风向","fl":"3-4级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"03日星期五","sunrise":"05:18","high":"高温 32.0℃","low":"低温 26.0℃","sunset":"18:52","aqi":42.0,"fx":"无持续风向","fl":"3-4级","type":"大雨","notice":"出门最好穿雨衣，勿挡视线"},{"date":"04日星期六","sunrise":"05:18","high":"高温 36.0℃","low":"低温 27.0℃","sunset":"18:52","aqi":51.0,"fx":"南风","fl":"<3级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"05日星期日","sunrise":"05:19","high":"高温 37.0℃","low":"低温 28.0℃","sunset":"18:51","aqi":48.0,"fx":"南风","fl":"<3级","type":"晴","notice":"愿你拥有比阳光明媚的心情"},{"date":"06日星期一","sunrise":"05:20","high":"高温 37.0℃","low":"低温 28.0℃","sunset":"18:50","aqi":45.0,"fx":"南风","fl":"<3级","type":"晴","notice":"愿你拥有比阳光明媚的心情"}]}}
+2018-08-02 01:32:24.682 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.yyf.wcqs.WcqsApplicationTests], using SpringBootContextLoader
+2018-08-02 01:32:24.690 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.yyf.wcqs.WcqsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-08-02 01:32:24.691 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yyf.wcqs.WcqsApplicationTests]: WcqsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-08-02 01:32:24.810 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yyf.wcqs.WcqsApplication for test class com.yyf.wcqs.WcqsApplicationTests
+2018-08-02 01:32:24.922 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-08-02 01:32:24.943 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a2cb77, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f278eb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1217633, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@530d0a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a18644, org.springframework.test.context.transaction.TransactionalTestExecutionListener@cf93bb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7be63f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d28fa7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@14ca7df, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@138a206, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@d3eec0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4fa0a]
+2018-08-02 01:32:25.187 [main] INFO  com.yyf.wcqs.WcqsApplicationTests - Starting WcqsApplicationTests on DESKTOP-Q0MDAE4 with PID 20048 (started by yyf in C:\Users\yyf\IdeaProjects\plcp_group\wcqs)
+2018-08-02 01:32:25.187 [main] INFO  com.yyf.wcqs.WcqsApplicationTests - No active profile set, falling back to default profiles: default
+2018-08-02 01:32:25.221 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@11bf055: startup date [Thu Aug 02 01:32:25 CST 2018]; root of context hierarchy
+2018-08-02 01:32:26.614 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 01:32:26.811 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@11bf055: startup date [Thu Aug 02 01:32:25 CST 2018]; root of context hierarchy
+2018-08-02 01:32:26.887 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[GET]}" onto public void com.yyf.wcqs.controller.WeChatAnswerController.check(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-08-02 01:32:26.888 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[POST]}" onto public void com.yyf.wcqs.controller.WeChatAnswerController.receive(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-08-02 01:32:26.889 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-02 01:32:26.890 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-02 01:32:26.918 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 01:32:26.918 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 01:32:26.972 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-08-02 01:32:27.411 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-08-02 01:32:27.421 [main] INFO  com.yyf.wcqs.WcqsApplicationTests - Started WcqsApplicationTests in 2.446 seconds (JVM running for 3.28)
+2018-08-02 01:32:27.424 [main] INFO  com.yyf.wcqs.boot.WeChatBootStrap - ������������΢������token
+2018-08-02 01:32:27.899 [main] ERROR com.yyf.wcqs.cache.WeChatCache - ��ȡjsApiTicketʱȱ��accessToken����
+2018-08-02 01:32:27.900 [main] ERROR com.yyf.wcqs.cache.WeChatCache - ��ȡipListʱȱ��accessToken����
+2018-08-02 01:32:27.900 [main] INFO  com.yyf.wcqs.boot.WeChatBootStrap - ��������������������
+2018-08-02 01:32:27.901 [main] INFO  com.yyf.wcqs.task.WeatherUpdateTask - ��ʼ����������Ϣ
+2018-08-02 01:32:27.922 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-08-02 01:32:29.059 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4427)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:70)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy69.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:231)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:128)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy75.getAll(Unknown Source)
+	at com.yyf.wcqs.task.WeatherUpdateTask.task(WeatherUpdateTask.java:39)
+	at com.yyf.wcqs.boot.WeChatBootStrap.run(WeChatBootStrap.java:25)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+2018-08-02 01:32:29.063 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-08-02 01:32:29.065 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:800)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+Caused by: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in com/yyf/wcqs/repository/WeatherRepository.java (best guess)
+### The error may involve com.yyf.wcqs.repository.WeatherRepository.getAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:79)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:447)
+	at com.sun.proxy.$Proxy69.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:231)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:128)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy75.getAll(Unknown Source)
+	at com.yyf.wcqs.task.WeatherUpdateTask.task(WeatherUpdateTask.java:39)
+	at com.yyf.wcqs.boot.WeChatBootStrap.run(WeChatBootStrap.java:25)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	... 32 common frames omitted
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in com/yyf/wcqs/repository/WeatherRepository.java (best guess)
+### The error may involve com.yyf.wcqs.repository.WeatherRepository.getAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	... 41 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:70)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 47 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4427)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 57 common frames omitted
+2018-08-02 01:32:29.067 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@11bf055: startup date [Thu Aug 02 01:32:25 CST 2018]; root of context hierarchy
+2018-08-02 01:32:29.070 [main] ERROR o.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@1a2cb77] to prepare test instance [com.yyf.wcqs.WcqsApplicationTests@1cefd84]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:800)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 27 common frames omitted
+Caused by: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in com/yyf/wcqs/repository/WeatherRepository.java (best guess)
+### The error may involve com.yyf.wcqs.repository.WeatherRepository.getAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:79)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:447)
+	at com.sun.proxy.$Proxy69.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:231)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:128)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy75.getAll(Unknown Source)
+	at com.yyf.wcqs.task.WeatherUpdateTask.task(WeatherUpdateTask.java:39)
+	at com.yyf.wcqs.boot.WeChatBootStrap.run(WeChatBootStrap.java:25)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	... 32 common frames omitted
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in com/yyf/wcqs/repository/WeatherRepository.java (best guess)
+### The error may involve com.yyf.wcqs.repository.WeatherRepository.getAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	... 41 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:70)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 47 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4427)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 57 common frames omitted
+2018-08-02 01:36:07.597 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.yyf.wcqs.WcqsApplicationTests], using SpringBootContextLoader
+2018-08-02 01:36:07.603 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.yyf.wcqs.WcqsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-08-02 01:36:07.603 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yyf.wcqs.WcqsApplicationTests]: WcqsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-08-02 01:36:07.714 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yyf.wcqs.WcqsApplication for test class com.yyf.wcqs.WcqsApplicationTests
+2018-08-02 01:36:07.820 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-08-02 01:36:07.842 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a2cb77, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f278eb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1217633, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@530d0a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a18644, org.springframework.test.context.transaction.TransactionalTestExecutionListener@cf93bb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7be63f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d28fa7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@14ca7df, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@138a206, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@d3eec0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4fa0a]
+2018-08-02 01:36:08.080 [main] INFO  com.yyf.wcqs.WcqsApplicationTests - Starting WcqsApplicationTests on DESKTOP-Q0MDAE4 with PID 7336 (started by yyf in C:\Users\yyf\IdeaProjects\plcp_group\wcqs)
+2018-08-02 01:36:08.081 [main] INFO  com.yyf.wcqs.WcqsApplicationTests - No active profile set, falling back to default profiles: default
+2018-08-02 01:36:08.113 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@11bf055: startup date [Thu Aug 02 01:36:08 CST 2018]; root of context hierarchy
+2018-08-02 01:36:09.391 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 01:36:09.569 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@11bf055: startup date [Thu Aug 02 01:36:08 CST 2018]; root of context hierarchy
+2018-08-02 01:36:09.630 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[GET]}" onto public void com.yyf.wcqs.controller.WeChatAnswerController.check(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-08-02 01:36:09.631 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[POST]}" onto public void com.yyf.wcqs.controller.WeChatAnswerController.receive(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-08-02 01:36:09.632 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-02 01:36:09.633 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-02 01:36:09.661 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 01:36:09.661 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 01:36:09.714 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-08-02 01:36:10.143 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-08-02 01:36:10.152 [main] INFO  com.yyf.wcqs.WcqsApplicationTests - Started WcqsApplicationTests in 2.281 seconds (JVM running for 3.072)
+2018-08-02 01:36:10.154 [main] INFO  com.yyf.wcqs.boot.WeChatBootStrap - ������������΢������token
+2018-08-02 01:36:10.606 [main] ERROR com.yyf.wcqs.cache.WeChatCache - ��ȡjsApiTicketʱȱ��accessToken����
+2018-08-02 01:36:10.606 [main] ERROR com.yyf.wcqs.cache.WeChatCache - ��ȡipListʱȱ��accessToken����
+2018-08-02 01:36:10.606 [main] INFO  com.yyf.wcqs.boot.WeChatBootStrap - ��������������������
+2018-08-02 01:36:10.607 [main] INFO  com.yyf.wcqs.task.WeatherUpdateTask - ��ʼ����������Ϣ
+2018-08-02 01:36:10.622 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-08-02 01:36:10.768 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-08-02 01:36:11.088 [main] INFO  com.yyf.wcqs.task.WeatherUpdateTask - {"date":"20180802","message":"Success !","status":200,"city":"杭州","count":4,"data":{"shidu":"73%","pm25":27.0,"pm10":46.0,"quality":"�?","wendu":"30","ganmao":"极少数敏感人群应减少户外活动","yesterday":{"date":"01日星期三","sunrise":"05:17","high":"高温 34.0�?","low":"低温 26.0�?","sunset":"18:54","aqi":59.0,"fx":"东北�?","fl":"<3�?","type":"阵雨","notice":"阵雨来袭，出门记得带�?"},"forecast":[{"date":"02日星期四","sunrise":"05:17","high":"高温 33.0�?","low":"低温 25.0�?","sunset":"18:53","aqi":59.0,"fx":"无持续风�?","fl":"3-4�?","type":"雷阵�?","notice":"带好雨具，别在树下躲�?"},{"date":"03日星期五","sunrise":"05:18","high":"高温 32.0�?","low":"低温 26.0�?","sunset":"18:52","aqi":42.0,"fx":"无持续风�?","fl":"3-4�?","type":"大雨","notice":"出门�?好穿雨衣，勿挡视�?"},{"date":"04日星期六","sunrise":"05:18","high":"高温 36.0�?","low":"低温 27.0�?","sunset":"18:52","aqi":51.0,"fx":"南风","fl":"<3�?","type":"雷阵�?","notice":"带好雨具，别在树下躲�?"},{"date":"05日星期日","sunrise":"05:19","high":"高温 37.0�?","low":"低温 28.0�?","sunset":"18:51","aqi":48.0,"fx":"南风","fl":"<3�?","type":"�?","notice":"愿你拥有比阳光明媚的心情"},{"date":"06日星期一","sunrise":"05:20","high":"高温 37.0�?","low":"低温 28.0�?","sunset":"18:50","aqi":45.0,"fx":"南风","fl":"<3�?","type":"�?","notice":"愿你拥有比阳光明媚的心情"}]}}
+2018-08-02 01:36:21.304 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@11bf055: startup date [Thu Aug 02 01:36:08 CST 2018]; root of context hierarchy
+2018-08-02 01:36:21.306 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-08-02 01:36:21.309 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-08-02 01:57:40.744 [main] INFO  com.yyf.wcqs.WcqsApplication - Starting WcqsApplication on DESKTOP-Q0MDAE4 with PID 18624 (C:\Users\yyf\IdeaProjects\plcp_group\wcqs\target\classes started by yyf in C:\Users\yyf\IdeaProjects\plcp_group\wcqs)
+2018-08-02 01:57:40.747 [main] INFO  com.yyf.wcqs.WcqsApplication - No active profile set, falling back to default profiles: default
+2018-08-02 01:57:40.816 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16690c0: startup date [Thu Aug 02 01:57:40 CST 2018]; root of context hierarchy
+2018-08-02 01:57:41.850 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-08-02 01:57:41.860 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-08-02 01:57:41.871 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-02 01:57:41.872 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-02 01:57:41.875 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\mysql\mysql-5.1.41-winx64\bin;D:\apache-maven-3.5.3\bin;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\yyf\AppData\Local\Microsoft\WindowsApps;;.]
+2018-08-02 01:57:42.004 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-02 01:57:42.004 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1188 ms
+2018-08-02 01:57:42.147 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-02 01:57:42.151 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-02 01:57:42.151 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-02 01:57:42.151 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-02 01:57:42.151 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-02 01:57:42.454 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 01:57:42.646 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16690c0: startup date [Thu Aug 02 01:57:40 CST 2018]; root of context hierarchy
+2018-08-02 01:57:42.698 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[GET]}" onto public void com.yyf.wcqs.controller.WeChatAnswerController.check(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-08-02 01:57:42.699 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[POST]}" onto public void com.yyf.wcqs.controller.WeChatAnswerController.receive(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-08-02 01:57:42.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-02 01:57:42.701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-02 01:57:42.733 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 01:57:42.733 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 01:57:42.785 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-08-02 01:57:43.082 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-02 01:57:43.083 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-02 01:57:43.086 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-02 01:57:43.094 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-08-02 01:57:43.100 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-08-02 01:57:43.107 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-02 01:57:43.132 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-08-02 01:57:43.135 [main] INFO  com.yyf.wcqs.WcqsApplication - Started WcqsApplication in 2.656 seconds (JVM running for 3.413)
+2018-08-02 01:57:43.138 [main] INFO  com.yyf.wcqs.boot.WeChatBootStrap - 服务启动调用微信求情token
+2018-08-02 01:57:43.601 [main] ERROR com.yyf.wcqs.cache.WeChatCache - 获取jsApiTicket时缺少accessToken参数
+2018-08-02 01:57:43.601 [main] ERROR com.yyf.wcqs.cache.WeChatCache - 获取ipList时缺少accessToken参数
+2018-08-02 01:57:43.601 [main] INFO  com.yyf.wcqs.boot.WeChatBootStrap - 服务启动调用天气请求
+2018-08-02 01:57:43.601 [main] INFO  com.yyf.wcqs.task.WeatherUpdateTask - 开始更新天气信息
+2018-08-02 01:57:43.613 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-08-02 01:57:43.712 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-08-02 01:57:44.021 [main] INFO  com.yyf.wcqs.task.WeatherUpdateTask - {"date":"20180802","message":"Success !","status":200,"city":"杭州","count":5,"data":{"shidu":"73%","pm25":27.0,"pm10":46.0,"quality":"良","wendu":"30","ganmao":"极少数敏感人群应减少户外活动","yesterday":{"date":"01日星期三","sunrise":"05:17","high":"高温 34.0℃","low":"低温 26.0℃","sunset":"18:54","aqi":59.0,"fx":"东北风","fl":"<3级","type":"阵雨","notice":"阵雨来袭，出门记得带伞"},"forecast":[{"date":"02日星期四","sunrise":"05:17","high":"高温 33.0℃","low":"低温 25.0℃","sunset":"18:53","aqi":59.0,"fx":"无持续风向","fl":"3-4级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"03日星期五","sunrise":"05:18","high":"高温 32.0℃","low":"低温 26.0℃","sunset":"18:52","aqi":42.0,"fx":"无持续风向","fl":"3-4级","type":"大雨","notice":"出门最好穿雨衣，勿挡视线"},{"date":"04日星期六","sunrise":"05:18","high":"高温 36.0℃","low":"低温 27.0℃","sunset":"18:52","aqi":51.0,"fx":"南风","fl":"<3级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"05日星期日","sunrise":"05:19","high":"高温 37.0℃","low":"低温 28.0℃","sunset":"18:51","aqi":48.0,"fx":"南风","fl":"<3级","type":"晴","notice":"愿你拥有比阳光明媚的心情"},{"date":"06日星期一","sunrise":"05:20","high":"高温 37.0℃","low":"低温 28.0℃","sunset":"18:50","aqi":45.0,"fx":"南风","fl":"<3级","type":"晴","notice":"愿你拥有比阳光明媚的心情"}]}}
+2018-08-02 01:57:54.318 [main] INFO  com.yyf.wcqs.task.WeatherUpdateTask - {"date":"20180802","message":"Success !","status":200,"city":"绍兴","count":6,"data":{"shidu":"79%","wendu":"29","ganmao":"-","yesterday":{"date":"01日星期三","sunrise":"05:15","high":"高温 34.0℃","low":"低温 27.0℃","sunset":"18:52","aqi":44.0,"fx":"无持续风向","fl":"<3级","type":"多云","notice":"阴晴之间，谨防紫外线侵扰"},"forecast":[{"date":"02日星期四","sunrise":"05:16","high":"高温 32.0℃","low":"低温 25.0℃","sunset":"18:51","aqi":64.0,"fx":"东北风","fl":"3-4级","type":"阵雨","notice":"阵雨来袭，出门记得带伞"},{"date":"03日星期五","sunrise":"05:17","high":"高温 30.0℃","low":"低温 26.0℃","sunset":"18:50","aqi":50.0,"fx":"无持续风向","fl":"<3级","type":"中雨","notice":"记得随身携带雨伞哦"},{"date":"04日星期六","sunrise":"05:17","high":"高温 34.0℃","low":"低温 27.0℃","sunset":"18:49","aqi":37.0,"fx":"无持续风向","fl":"<3级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"05日星期日","sunrise":"05:18","high":"高温 35.0℃","low":"低温 27.0℃","sunset":"18:49","aqi":31.0,"fx":"无持续风向","fl":"<3级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"06日星期一","sunrise":"05:18","high":"高温 35.0℃","low":"低温 27.0℃","sunset":"18:48","aqi":35.0,"fx":"无持续风向","fl":"<3级","type":"多云","notice":"阴晴之间，谨防紫外线侵扰"}]}}
+2018-08-02 02:00:00.808 [pool-1-thread-1] ERROR com.yyf.wcqs.cache.WeChatCache - 获取jsApiTicket时缺少accessToken参数
+2018-08-02 02:00:00.810 [pool-1-thread-1] ERROR com.yyf.wcqs.cache.WeChatCache - 获取ipList时缺少accessToken参数
+2018-08-02 02:00:00.810 [pool-1-thread-1] INFO  com.yyf.wcqs.task.WeatherUpdateTask - 开始更新天气信息
+2018-08-02 02:00:00.977 [pool-1-thread-1] INFO  com.yyf.wcqs.task.WeatherUpdateTask - {"date":"20180802","message":"Success !","status":200,"city":"杭州","count":7,"data":{"shidu":"73%","pm25":27.0,"pm10":46.0,"quality":"良","wendu":"30","ganmao":"极少数敏感人群应减少户外活动","yesterday":{"date":"01日星期三","sunrise":"05:17","high":"高温 34.0℃","low":"低温 26.0℃","sunset":"18:54","aqi":59.0,"fx":"东北风","fl":"<3级","type":"阵雨","notice":"阵雨来袭，出门记得带伞"},"forecast":[{"date":"02日星期四","sunrise":"05:17","high":"高温 33.0℃","low":"低温 25.0℃","sunset":"18:53","aqi":59.0,"fx":"无持续风向","fl":"3-4级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"03日星期五","sunrise":"05:18","high":"高温 32.0℃","low":"低温 26.0℃","sunset":"18:52","aqi":42.0,"fx":"无持续风向","fl":"3-4级","type":"大雨","notice":"出门最好穿雨衣，勿挡视线"},{"date":"04日星期六","sunrise":"05:18","high":"高温 36.0℃","low":"低温 27.0℃","sunset":"18:52","aqi":51.0,"fx":"南风","fl":"<3级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"05日星期日","sunrise":"05:19","high":"高温 37.0℃","low":"低温 28.0℃","sunset":"18:51","aqi":48.0,"fx":"南风","fl":"<3级","type":"晴","notice":"愿你拥有比阳光明媚的心情"},{"date":"06日星期一","sunrise":"05:20","high":"高温 37.0℃","low":"低温 28.0℃","sunset":"18:50","aqi":45.0,"fx":"南风","fl":"<3级","type":"晴","notice":"愿你拥有比阳光明媚的心情"}]}}
+2018-08-02 02:00:11.157 [pool-1-thread-1] INFO  com.yyf.wcqs.task.WeatherUpdateTask - {"date":"20180802","message":"Success !","status":200,"city":"绍兴","count":8,"data":{"shidu":"79%","wendu":"29","ganmao":"-","yesterday":{"date":"01日星期三","sunrise":"05:15","high":"高温 34.0℃","low":"低温 27.0℃","sunset":"18:52","aqi":44.0,"fx":"无持续风向","fl":"<3级","type":"多云","notice":"阴晴之间，谨防紫外线侵扰"},"forecast":[{"date":"02日星期四","sunrise":"05:16","high":"高温 32.0℃","low":"低温 25.0℃","sunset":"18:51","aqi":64.0,"fx":"东北风","fl":"3-4级","type":"阵雨","notice":"阵雨来袭，出门记得带伞"},{"date":"03日星期五","sunrise":"05:17","high":"高温 30.0℃","low":"低温 26.0℃","sunset":"18:50","aqi":50.0,"fx":"无持续风向","fl":"<3级","type":"中雨","notice":"记得随身携带雨伞哦"},{"date":"04日星期六","sunrise":"05:17","high":"高温 34.0℃","low":"低温 27.0℃","sunset":"18:49","aqi":37.0,"fx":"无持续风向","fl":"<3级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"05日星期日","sunrise":"05:18","high":"高温 35.0℃","low":"低温 27.0℃","sunset":"18:49","aqi":31.0,"fx":"无持续风向","fl":"<3级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},{"date":"06日星期一","sunrise":"05:18","high":"高温 35.0℃","low":"低温 27.0℃","sunset":"18:48","aqi":35.0,"fx":"无持续风向","fl":"<3级","type":"多云","notice":"阴晴之间，谨防紫外线侵扰"}]}}

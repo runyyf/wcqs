@@ -19,7 +19,7 @@ public class WeChatBootStrap implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
         //  服务启动调用微信求情token
-        logger.info("服务启动调用微信求情token");
+        logger.info("服务启动调用微信请求token");
         WeChatCache.getInstance().flushAll();
         logger.info("服务启动调用天气请求");
         new WeatherUpdateTask().task();
