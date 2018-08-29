@@ -115,6 +115,26 @@
 			<version>1.2.47</version>
 		</dependency>
 
+		<!--qrCode-->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>javase</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
+		<!--科大讯飞语音库-->
+		<dependency>
+			<groupId>com.kdxf</groupId>
+			<artifactId>kdxf-openapi-sdk</artifactId>
+			<version>1.0</version>
+			<systemPath>${project.basedir}/lib/msc.jar</systemPath>
+			<scope>system</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
