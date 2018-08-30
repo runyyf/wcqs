@@ -40,8 +40,8 @@ public class TTSUtils {
         mTts.setParameter(SpeechConstant.VOICE_NAME,"xiaoyan");
         mTts.setParameter(SpeechConstant.SPEED,"50");
         mTts.setParameter(SpeechConstant.VOLUME,"80");
-        mTts.setParameter(SpeechConstant.TTS_AUDIO_PATH,"./tts_test.pcm");
-        mTts.synthesizeToUri("语音合成测试","./tts_test.pcm",mySynListener);
+        mTts.setParameter(SpeechConstant.TTS_AUDIO_PATH,"static/music/tts_test.pcm");
+        mTts.synthesizeToUri("语音合成测试","static/music/tts_test.pcm",mySynListener);
     }
 
     public void pcmToWav(){

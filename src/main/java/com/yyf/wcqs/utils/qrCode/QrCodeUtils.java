@@ -17,10 +17,9 @@ import java.util.HashMap;
  * @Date: Created in 15:19 2018/8/29
  */
 public class QrCodeUtils {
-    public static void create(){
-        String content="http://4yny3a.natappfree.cc/music/test.mp3";
-        int width=100;
-        int height=100;
+    public static void create(String content,String name){
+        int width=150;
+        int height=150;
         String format="png";
         // 定义二维码参数
         HashMap hints = new HashMap();
@@ -31,7 +30,8 @@ public class QrCodeUtils {
         try {
             BitMatrix bitMatrix = new MultiFormatWriter().encode(content,
                     BarcodeFormat.QR_CODE, width, height, hints);
-            Path file = new File("qrCode/img.png").toPath();
+            String filePath = "qrCode/"+name+".png";
+            Path file = new File(filePath).toPath();
 
             MatrixToImageWriter.writeToPath(bitMatrix, format, file);
 
@@ -41,6 +41,6 @@ public class QrCodeUtils {
     }
 
     public static void main(String args[]){
-        create();
+        create("http://www.baidu.com","123");
     }
 }

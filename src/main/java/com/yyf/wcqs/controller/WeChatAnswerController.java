@@ -4,10 +4,12 @@ import com.yyf.wcqs.cache.WeChatCache;
 import com.yyf.wcqs.domain.Weather;
 import com.yyf.wcqs.repository.WeatherRepository;
 import com.yyf.wcqs.utils.EmptyUtils;
+import com.yyf.wcqs.utils.qrCode.QrCodeUtils;
 import com.yyf.wcqs.utils.weChat.MessageUtils;
 import com.yyf.wcqs.utils.weChat.WeChatCheckoutUtil;
 import com.yyf.wcqs.wap.weChat.WeChatMessageNotify;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
@@ -27,6 +30,9 @@ public class WeChatAnswerController {
 
     @Autowired
     private WeatherRepository weatherRepository;
+
+    @Value("${path.file.qrCode}")
+    private String qrCodeFile;
 
     /**
      *
@@ -64,7 +70,7 @@ public class WeChatAnswerController {
                 }else if (content.equals("卞蒙丹")){
                     text.setContent("你家峰峰哥哥很喜欢你");
                 }else if (content.equals("小秘密")){
-                    text.setContent("http://runyyf.top/html/index.html");
+                    text.setContent("http://39.105.67.98/html/index.html");
                 }else{
                     text.setContent("hello");
                 }
@@ -83,26 +89,35 @@ public class WeChatAnswerController {
                 }
 
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmSS");
-
+                String fileName = sdf.format(new Date());
 
                 //通过语音id下载语音
-                String videoUrl = WeChatCache.getInstance().getMediaResourceUrl(mediaId,sdf.format(new Date()));
+                String videoUrl = WeChatCache.getInstance().getMediaResourceUrl(mediaId,fileName);
                 if (videoUrl==null){
                     text.setMsgType("text");
                     text.setContent("转化失败");
                 }else {
-                    text.setMsgType("image");
+                    System.out.println("videoUrl="+videoUrl);
+                    QrCodeUtils.create(videoUrl,fileName);
+                    String uploadMediaId = WeChatCache.getInstance().uploadFile(new File(qrCodeFile+"/"+fileName+".png"));
+                    if (uploadMediaId != null){
+                        text.setMsgType("image");
+                        text.setMediaId(uploadMediaId);
+                    }else {
+                        text.setMsgType("text");
+                        text.setContent("转化失败");
+                    }
+
                 }
-
                 text.setCreateTime(new Date().getTime());
-                //message=MessageUtils.textMessageToXml(text);
+                message=MessageUtils.textMessageToXml(text);
 
-                System.out.println(mediaId);
-                System.out.println(recognition);
-                System.out.println(videoUrl);
-
+                StringBuilder stringBuilder = new StringBuilder(message);
+                stringBuilder.insert(message.indexOf("<MediaId>"),"<Image>");
+                stringBuilder.insert(message.indexOf("</xml>"),"</Image>");
+                message=stringBuilder.toString();
             }
-            //	System.out.println(message);
+//            System.out.println(message);
             out.print(message);
         } catch (Exception e) {
             e.printStackTrace();

@@ -30,6 +30,7 @@ public class WeChatMessageNotify {
     private String MsgType;
     private String Content;
     private String MsgId;
+    private String MediaId;
     public String getToUserName() {
         return ToUserName;
     }
@@ -67,4 +68,11 @@ public class WeChatMessageNotify {
         MsgId = msgId;
     }
 
+    public String getMediaId() {
+        return MediaId;
+    }
+
+    public void setMediaId(String mediaId) {
+        MediaId = mediaId;
+    }
 }

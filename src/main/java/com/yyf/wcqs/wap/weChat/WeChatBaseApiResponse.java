@@ -18,6 +18,7 @@ public class WeChatBaseApiResponse {
 
     private List<String> ip_list;//ip列表
     private String video_url;//url下载地址
+    private String media_id;//上传文件id
 
     public Integer getErrcode() {
         return errcode;
@@ -97,5 +98,13 @@ public class WeChatBaseApiResponse {
 
     public void setVideo_url(String video_url) {
         this.video_url = video_url;
+    }
+
+    public String getMedia_id() {
+        return media_id;
+    }
+
+    public void setMedia_id(String media_id) {
+        this.media_id = media_id;
     }
 }
