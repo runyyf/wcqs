@@ -19,7 +19,7 @@ public class WebResourceConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/myMp3/**").addResourceLocations(mp3FilePath);
+        registry.addResourceHandler("/myMp3/**").addResourceLocations("file:"+mp3FilePath);
         super.addResourceHandlers(registry);
     }
 }

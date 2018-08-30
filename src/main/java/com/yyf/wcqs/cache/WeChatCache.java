@@ -45,6 +45,7 @@ public class WeChatCache {
     private List<String> ipList;//ip列表
 
     private String domainUrl;//域名
+    private String nginxPort;//文件访问端口
     private String voicePath;//voice存放路径
     private String mp3Path;//mp3存放路径
     private String qrCodePath;//qrCode存放路径
@@ -63,6 +64,7 @@ public class WeChatCache {
         voicePath = SystemConfig.getProperty("path.file.voice");
         qrCodePath = SystemConfig.getProperty("path.file.qrCode");
         mp3Path = SystemConfig.getProperty("path.file.mp3");
+        nginxPort = SystemConfig.getProperty("path.nginx.port");
 
     }
 
@@ -210,9 +212,9 @@ public class WeChatCache {
             outStream.close();
 
             //amr文件转化为mp3文件
-            String mp3FileName = mp3Path+"//"+name+".mp3";
+            String mp3FileName = mp3Path+"/"+name+".mp3";
             FfmpegUtils.amrToMP3(amrFileName,mp3FileName);
-            return domainUrl+"/myMp3/"+name+".mp3";
+            return domainUrl+":"+nginxPort+"/mp3/"+name+".mp3";
 
         } catch (Exception e) {
             e.printStackTrace();
