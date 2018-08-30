@@ -8,6 +8,8 @@ import com.yyf.wcqs.utils.qrCode.QrCodeUtils;
 import com.yyf.wcqs.utils.weChat.MessageUtils;
 import com.yyf.wcqs.utils.weChat.WeChatCheckoutUtil;
 import com.yyf.wcqs.wap.weChat.WeChatMessageNotify;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -27,6 +29,8 @@ import java.util.Map;
 
 @Controller
 public class WeChatAnswerController {
+
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
     private WeatherRepository weatherRepository;
@@ -93,6 +97,7 @@ public class WeChatAnswerController {
 
                 //通过语音id下载语音
                 String videoUrl = WeChatCache.getInstance().getMediaResourceUrl(mediaId,fileName);
+                logger.info("接收微信voice消息:videoUrl下载完成="+videoUrl);
                 if (videoUrl==null){
                     text.setMsgType("text");
                     text.setContent("转化失败");
@@ -107,6 +112,8 @@ public class WeChatAnswerController {
                         text.setMsgType("text");
                         text.setContent("转化失败");
                     }
+                    logger.info("接收微信voice消息:uploadMediaId上传完成="+uploadMediaId);
+
 
                 }
                 text.setCreateTime(new Date().getTime());

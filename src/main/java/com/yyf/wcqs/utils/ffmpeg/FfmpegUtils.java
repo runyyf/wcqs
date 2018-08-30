@@ -1,5 +1,7 @@
 package com.yyf.wcqs.utils.ffmpeg;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -8,23 +10,23 @@ import java.io.InputStream;
 import java.net.URL;
 
 public class FfmpegUtils {
-
+    private static final Logger logger = LoggerFactory.getLogger(FfmpegUtils.class);
     /**
      * 将amr文件输入转为mp3格式
      * @param
      * @return
      */
-    public static InputStream amrToMP3(String amrPath,String mp3Path) {
+    public static void amrToMP3(String amrPath,String mp3Path) {
         String ffmpegPath = getLinuxOrWindowsFfmpegPath();
         Runtime runtime = Runtime.getRuntime();
         try {
 
-            URL url = Thread.currentThread().getContextClassLoader().getResource("static/music/");
-
             //执行ffmpeg文件，将amr格式转为mp3
             //filePath ----> amr文件在临时文件夹中的地址
             //mp3FilePath  ----> 转换后的mp3文件地址
-            Process p = runtime.exec(ffmpegPath + "ffmpeg -i " + amrPath + " " + mp3Path);//执行ffmpeg.exe,前面是ffmpeg.exe的地址，中间是需要转换的文件地址，后面是转换后的文件地址。-i是转换方式，意思是可编码解码，mp3编码方式采用的是libmp3lame
+            String cmd = ffmpegPath + "ffmpeg -i " + amrPath + " " + mp3Path;
+            Process p = runtime.exec(cmd);//执行ffmpeg.exe,前面是ffmpeg.exe的地址，中间是需要转换的文件地址，后面是转换后的文件地址。-i是转换方式，意思是可编码解码，mp3编码方式采用的是libmp3lame
+            logger.info("ffmpeg转化:"+cmd);
 
             //释放进程
             p.getOutputStream().close();
@@ -32,8 +34,8 @@ public class FfmpegUtils {
             p.getErrorStream().close();
             p.waitFor();
 
-            File mp3File = new File(mp3Path);
-            InputStream fileInputStream = new FileInputStream(mp3File);
+//            File mp3File = new File(mp3Path);
+//            InputStream fileInputStream = new FileInputStream(mp3File);
 
             //应该在调用该方法的地方关闭该input流（使用完后），并且要删除掉临时文件夹下的相应文件
             /*File amrFile = new File(filePath);
@@ -47,13 +49,13 @@ public class FfmpegUtils {
                 System.out.println("删除mp3文件："+delete);
             }*/
 
-            return fileInputStream;
+//            return fileInputStream;
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             runtime.freeMemory();
         }
-        return null;
+//        return null;
     }
 
 
